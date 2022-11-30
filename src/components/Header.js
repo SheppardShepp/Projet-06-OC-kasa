@@ -1,15 +1,16 @@
+import React from 'react';
+import { Link } from "react-router-dom";
 import logo from '../assets/logo.svg'
-import './Header.scss'
 
 function Header() {
     return (
-        <div className='lmj-banner'>
-            <img src={logo} alt='agence Kasa' className='lmj-logo' />
-            <div>
-                <a href=' '>Accueil</a>
-                <a href=' '>A Propos</a>
-            </div>
-        </div>
+        <header>
+            <img src={logo} alt='agence Kasa' className='imgHeader'/>
+            <nav>
+                <Link to="/" className='navHeader'>Accueil</Link>
+                <Link to="/Propos" className='navHeader'>A Propos</Link>
+            </nav>
+        </header>
     )
 }
 

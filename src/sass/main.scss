@@ -1,0 +1,13 @@
+@import "./utils/police";
+@import "./utils/variable";
+@import "./utils/mixin";
+
+@import "./app";
+
+@import './composant/footer';
+@import './composant/header';
+
+@import './page/found';
+@import './page/home';
+@import './page/logement';
+@import './page/propos';
