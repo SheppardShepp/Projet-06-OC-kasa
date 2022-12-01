@@ -3,7 +3,7 @@ import React from 'react';
 function Home() {
     return (
         <div>
-            <h1>Test Liaison SPA home</h1>
+            <h1>Chez vous, partout et ailleurs</h1>
         </div>
     )
 }

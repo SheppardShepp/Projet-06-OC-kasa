@@ -1,4 +1,5 @@
 header {
+    @include flex;
     @include flexBetween;
     padding: 4%;
 
@@ -9,6 +10,7 @@ header {
     }
 
     nav {
+        @include flex;
         @include flexBetween;
         width: 310px;
 

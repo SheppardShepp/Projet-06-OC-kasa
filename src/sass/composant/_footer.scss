@@ -1,6 +1,7 @@
 footer {
     background-color: black;
     height: 209px;
+    @include flex;
     @include flexCenter;
     @include flexColonne;
 
