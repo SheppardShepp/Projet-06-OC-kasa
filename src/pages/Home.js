@@ -1,10 +1,19 @@
 import React from 'react';
+import Banner from '../components/Banner';
+import CardList from '../components/Card';
+
 
 function Home() {
     return (
-        <div>
-            <h1>Chez vous, partout et ailleurs</h1>
-        </div>
+        <section className='main'>
+            <Banner />
+            <section className='card'>
+                <CardList />
+            </section>
+            
+        </section>
+
+
     )
 }
 

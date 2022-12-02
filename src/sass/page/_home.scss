@@ -1,0 +1,25 @@
+.main {
+    margin: 0 5% 0 5%;
+    max-width: 1440px;
+
+    @include flex;
+    @include flexColonne;
+
+
+    .card {
+        @include flex;
+        @include flexCenter;
+        flex-wrap: wrap;
+        padding: 2.5%;
+        background: #F7F7F7;
+        border-radius: 25px;
+        width: 95%;
+
+
+        @media (max-width: 650px) {
+            width: 90%;
+            padding: 0;
+            background: none;
+        }
+    }
+}

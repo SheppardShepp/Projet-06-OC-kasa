@@ -10,7 +10,7 @@ import Found from "./pages/Found";
 
 function App() {
   return (
-    <div>
+    <main>
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -19,7 +19,7 @@ function App() {
         <Route path='/*' element={<Found />} />
       </Routes>
       <Footer />
-    </div>
+    </main>
   );
 }
 

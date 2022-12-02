@@ -1,12 +1,18 @@
+// import utils
 @import "./utils/police";
 @import "./utils/variable";
 @import "./utils/mixin";
 
+// import app
 @import "./app";
 
-@import './composant/footer';
+// import components
 @import './composant/header';
+@import './composant/banner';
+@import './composant/card';
+@import './composant/footer';
 
+// import page
 @import './page/found';
 @import './page/home';
 @import './page/logement';

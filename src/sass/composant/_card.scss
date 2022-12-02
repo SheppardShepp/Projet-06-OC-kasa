@@ -1,0 +1,81 @@
+.card_caroussel {
+    width: 340px;
+    height: 340px;
+    margin: 50px;
+
+    @media (max-width: 650px) {
+        width: 300px;
+        height: 255px;
+        margin: 10px 0 10px 0;
+    }
+
+    &_img {
+        position: absolute;
+
+        border-radius: 10px;
+        width: 340px;
+        height: 340px;
+
+        @media (max-width: 650px) {
+            width: 300px;
+            height: 255px;
+        }
+    }
+
+    &_color {
+        position: absolute;
+
+        border-radius: 10px;
+        width: 340px;
+        height: 340px;
+
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+
+        @media (max-width: 650px) {
+            width: 300px;
+            height: 255px;
+        }
+    }
+
+    &_text {
+        position: absolute;
+        @include flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        font-size: 18px;
+        margin: 0;
+
+        border-radius: 10px;
+        width: 340px;
+        height: 340px;
+
+        @media (max-width: 650px) {
+            width: 300px;
+            height: 255px;
+        }
+
+        h2 {
+            font-size: 18PX;
+            margin-left: 20px;
+            color: $colorsTexte;
+            font-family: $texte;
+            font-weight: 500;
+        }
+    }
+
+
+    // cardError
+    &_black {
+        background: #FF6060;
+
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+
+        @media (max-width: 650px) {
+            width: 300px;
+            height: 255px;
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.banniere {
+    position: relative;
+    width: 100%;
+    margin: 65px 0 65px 0;
+
+    @media (max-width: 650px) {
+        min-width: 248px;
+        width: 90%;
+        height: 110px;
+        margin: 20px 0 20px 0;
+    }
+
+    &_black {
+        position: absolute;
+        mix-blend-mode: darken;
+        background: black;
+
+
+        border-radius: 25px;
+        width: 90%;
+        padding: 0 5% 0 5%;
+        height: 223px;
+
+        opacity: 0.3;
+
+        @media (max-width: 650px) {
+            min-width: 248px;
+            height: 110px;
+            border-radius: 10px;
+
+        }
+    }
+
+    &_text {
+        position: absolute;
+        @include flex;
+        @include flexCenter;
+
+        color: $colorsTexte;
+        font-family: $texte;
+        font-weight: 500;
+
+        font-size: 48px;
+        letter-spacing: 5px;
+        word-spacing: 4px;
+
+        width: 90%;
+        padding: 0 5% 0 5%;
+        height: 223px;
+        border-radius: 25px;
+
+        margin: 0;
+
+        @media (max-width: 650px) {
+            min-width: 248px;
+            font-size: 18px;
+            height: 110px;
+            border-radius: 10px;
+        }
+    }
+
+    &_img {
+        background-image: url(../../assets/imgBanniere.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        width: 90%;
+        padding: 0 5% 0 5%;
+        height: 223px;
+        border-radius: 25px;
+
+        @media (max-width: 650px) {
+            min-width: 248px;
+            border-radius: 10px;
+            height: 110px;
+        }
+    }
+}
