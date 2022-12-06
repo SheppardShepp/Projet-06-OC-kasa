@@ -1,27 +1,51 @@
 import React from 'react';
 import products from "../data/product.json";
-import CardError from "../components/CardError";
+import { Link } from "react-router-dom";
 
-function CardItem(props) {
-    if (!props.cover ) {
-        return <CardError />
-    }
-    return <Card cover={props.cover} title={props.title}/>
-}
+// ---------- card type par default ------------
+    //au cas ou une image serai manquante
+// function CardImgFound({cover, title = "Titre indisponible"}) {
 
-function Card({cover, title = "Titre indisponible"}) {
-    return (
-        <article className = "card_caroussel">
-            <img className='card_caroussel_img' src={cover} alt="location disponible"/>
+//     return (
+//         <Link to={`/logement/${products.id}`} className = "card_caroussel">
+//             <img className='card_caroussel_img' src={cover} alt="Images non disponible"/>
+//             <div className='card_caroussel_color'></div>
+//             <div className='card_caroussel_text'><h2>{title}</h2></div>
+//             <div className='card_caroussel_black'></div>
+//         </Link>
+//     );
+// }
+
+// ---------- card type ---------
+    //avec un titre par default si celui-ci est manquant
+// function CardItem({cover, title = "Titre indisponible"}) {
+//     return (
+//         <Link to="/logement/:id" className = "card_caroussel">
+//             <img className='card_caroussel_img' src={cover} alt="location disponible"/>
+//             <div className='card_caroussel_color'></div>
+//             <div className='card_caroussel_text'><h2>{title}</h2></div>
+//         </Link>)
+// }
+
+// //Je verifie les informations pour l'affichage de l'une des card
+
+
+
+
+
+
+
+//------------------------------------------------------------------------
+// ------------------------ VERSION VALIDE -------------------------------
+//------------------------------------------------------------------------
+
+function Cards() {
+     return products.map((product) =>
+        <Link to={`/logement/${product.id}`} className = "card_caroussel" key={product.id}>
+            <img className='card_caroussel_img' src={product.cover} alt="location disponible"/>
             <div className='card_caroussel_color'></div>
-            <div className='card_caroussel_text'><h2>{title}</h2></div>
-        </article>)
+            <div className='card_caroussel_text'><h2>{product.title}</h2></div>
+        </Link>)
 }
 
-function CardList() {
-    return products.map((product) =>
-        <CardItem cover={product.cover} title={product.title}/>
-    )
-}
-
-export default CardList;
+export default Cards;

@@ -1,11 +1,16 @@
-import React from 'react';
+import React from "react";
+import BannerAPropos from "../components/Banner/Banner_APropos";
+import Dropdown from "../components/Dropdown";
 
 function propos() {
-    return (
-        <div>
-            <h1>Test Liaison SPA propos</h1>
-        </div>
-    )
+  return (
+    <section className="main">
+      <BannerAPropos />
+      <section className="collapse">
+        <Dropdown />
+      </section>
+    </section>
+  );
 }
 
-export default propos
+export default propos;

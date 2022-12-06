@@ -1,11 +1,11 @@
+//--------- corp de la page -------------
 .main {
+    @include flex;
+    @include flexColonne;
     margin: 0 5% 0 5%;
     max-width: 1440px;
 
-    @include flex;
-    @include flexColonne;
-
-
+    //-------- section du carrousel ----------
     .card {
         @include flex;
         @include flexCenter;
@@ -14,7 +14,6 @@
         background: #F7F7F7;
         border-radius: 25px;
         width: 95%;
-
 
         @media (max-width: 650px) {
             width: 90%;

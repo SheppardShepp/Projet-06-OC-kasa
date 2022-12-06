@@ -1,6 +1,8 @@
 import React from 'react';
 import logoWhite from '../assets/logoWhite.svg'
 
+// ------------- section footer ------------
+
 function Footer() {
     return (
         <footer>

@@ -1,3 +1,5 @@
+// ------------- section header ------------
+
 header {
     @include flex;
     @include flexBetween;
@@ -6,12 +8,16 @@ header {
     min-width: 335px;
     max-width: 1440px;
 
+    // ------------- logo kasa ------------
+
     .imgHeader {
         @media (max-width: 650px) {
             margin-left: 5%;
             width: 100px;
         }
     }
+
+    // ------------- le menu de navigation ------------
 
     nav {
         @include flex;
@@ -23,25 +29,23 @@ header {
             margin: 0 5% 0 0;
         }
 
+        // ------------- les lien de navigation ------------
+
         a {
-            color: $colorTheme;
-            font-family: $texte;
+            @include texteColorTheme;
             text-align: center;
             font-size: 24px;
-            font-weight: 500;
             width: 110px;
             text-align: right;
             text-decoration: none;
 
+            &:hover {
+                text-decoration-line: underline;
+            }
+
             @media (max-width: 650px) {
                 font-size: 12px;
                 text-transform: uppercase;
-            }
-
-
-            &:hover {
-                text-decoration-line: underline;
-
             }
         }
     }

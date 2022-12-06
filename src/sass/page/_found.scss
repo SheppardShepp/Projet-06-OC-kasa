@@ -1,48 +1,59 @@
+// ------------- la page 404 ------------
+
 .pageError {
     @include flex;
     @include flexColonne;
     @include flexEvenly;
-    height: 1000px;
+    margin-bottom: 200px;
 
     @media (max-width: 650px) {
         height: 500px;
         justify-content: center;
+        margin: 100px 0 100px 0;
     }
 
+    // ------------- le 404 --------------
     p {
         color: $colorTheme;
         font-family: $texte;
         font-size: 288px;
         font-weight: 700;
         margin: 0;
+        padding: 120px 0 0 0;
 
         @media (max-width: 650px) {
             font-size: 96px;
         }
     }
 
+    // ----------- titre sous le 404 ----------
     h1 {
         color: $colorTheme;
         font-family: $texte;
         font-weight: 500;
         font-size: 36px;
         text-align: center;
+        margin-bottom: 200px;
 
         @media (max-width: 650px) {
             font-size: 18px;
             width: 75%;
+            margin-bottom: initial;
         }
     }
 
+    // ------------ le lien vers l'accueil -------------
     a {
         color: $colorTheme;
         font-family: $texte;
         font-size: 18px;
         text-decoration: none;
+        margin: 100px 0 100px 0;
 
         @media (max-width: 650px) {
             font-size: 14px;
             margin: 80px 0 80px 0;
+            padding: 50px 0 50px 0;
         }
 
         &:hover {

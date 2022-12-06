@@ -1,24 +1,31 @@
 footer {
-    background-color: black;
-    width: 100%;
-    height: 209px;
     @include flex;
     @include flexCenter;
     @include flexColonne;
+    background-color: black;
+    width: 100%;
+    height: 209px;
+
+    @media (max-width: 650px) {
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    // ------------- logo kasa ------------
 
     img {
         padding-top: 50px;
     }
 
+    // ------------- texte bas de page ------------
 
     p {
-        color: $colorsTexte;
-        font-family: $texte;
+        @include texteWhite;
         font-size: 24px;
-        font-weight: 500;
 
         @media (max-width: 650px) {
             font-size: 12px;
+            margin-top: 30px;
         }
     }
 }

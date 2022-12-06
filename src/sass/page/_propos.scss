@@ -1,0 +1,55 @@
+.collapse {
+    @include flex;
+    @include flexColonne;
+    margin-bottom: 50px;
+    width: 100%;
+
+    &_size {
+        width: 90%;
+        background-color: $colorFondTexte;
+        margin: 15px 0 15px 0;
+        border-radius: 5px;
+
+        &_colorTitle {
+            @include flex;
+            @include flexBetween;
+            background-color: $colorTheme;
+            @include texteWhite;
+            padding: 10px 20px 10px 20px;
+            font-size: 24px;
+            border-radius: 5px;
+
+
+            p {
+                margin: 0px;
+            }
+
+            @media (max-width: 650px) {
+                font-size: 14px;
+            }
+        }
+
+        &_colorDescription {
+            @include texteColorTheme;
+            font-size: 24px;
+            font-weight: 400;
+            padding: 15px 10px 10px 10px;
+            margin: 0;
+
+            @media (max-width: 650px) {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+// .arrowCollapse.true {
+//     justify-content: end;
+//   }
+//   .arrowCollapse.true > img {
+//     transform: rotate(-180deg);
+//     transition: all 0.6s ease;
+//   }
+//   .arrowCollapse.false > img {
+//     transition: all 0.6s ease;
+//   }
