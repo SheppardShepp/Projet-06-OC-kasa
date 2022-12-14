@@ -5,7 +5,8 @@
     @include cardResponsive;
     margin: 50px;
 
-    //---------- cardType ------------
+    //---------- image d'une card ------------
+
     &_img {
         position: absolute;
         @include cardItem;
@@ -13,12 +14,16 @@
         object-fit: cover;
     }
 
+    //---------- dégradé de l'image ------------
+
     &_color {
         position: absolute;
         @include cardItem;
         @include cardResponsive;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
     }
+
+    //---------- superposition du texte ------------
 
     &_text {
         position: absolute;
@@ -37,10 +42,8 @@
         }
     }
 
-    //---------- cardError --------------
-    &_black {
-        @include cardItem;
-        @include cardResponsive;
+    //---------- fond apr défaut en cas d'erreur d'importation de l'image --------------
+    .cardError {
         background: #FF6060;
     }
 }

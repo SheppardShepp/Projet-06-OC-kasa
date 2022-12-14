@@ -1,24 +1,72 @@
 import React, { useState } from "react";
-import collapses from "../data/collapse.json";
 
-function Dropdown() {
-  const [open, closed] = useState(false);
+// gestion des collapse et leur déroulé
+function Dropdown(props) {
+  // par défault les collapses sont fermé
+  const [open, setOpen] = useState(false);
 
-  return collapses.map((collapse) => (
-    <div
-      className="collapse_size"
-      key={collapse.id}
-      onClick={(key) => closed(!open)}
-    >
-      <div className="collapse_size_colorTitle">
-        <p>{collapse.title}</p>
-        <i className="fa-sharp fa-solid fa-chevron-up"></i>
+  // -------------- test mappage desription-------------
+  // const equipeTab = () => {
+
+  //---------------------------------------
+  //-------------1eme test-----------------
+  // if (typeof props.description === "string") {
+  //   return (
+  //     <p className="collapse_size_colorDescription">{props.description}</p>
+  //   );
+  // } else {
+  //   return (
+  //     <ul>
+  //       {props.description.map((list, id) => (
+  //         <li className="" key={id}>
+  //           {list}
+  //         </li>
+  //       ))}
+  //     </ul>
+  //   );
+  // }
+
+  //---------------------------------------
+  //-------------2eme test-----------------
+  //   return Array.isArray(props.description) ? (
+  //     <ul>
+  //       {props.description.map((list, id) => (
+  //         <li className="" key={id}>
+  //           {list}
+  //         </li>
+  //       ))}
+  //     </ul>
+  //   ) : (
+  //     <p className="collapse_size_colorDescription">{props.description}</p>
+  //   );
+
+  // };
+
+  return (
+    <div className="collapse_size">
+      <div className="collapse_size_colorTitle" onClick={() => setOpen(!open)}>
+        <p>{props.title}</p>
+        <i
+          className={
+            "fa-solid fa-chevron-up dropdown" +
+            (open ? " dropdown-active" : " dropdown-inactive")
+          }
+        ></i>
       </div>
-      {open && (
-        <p className="collapse_size_colorDescription">{collapse.description}</p>
-      )}
+      {open &&
+        (Array.isArray(props.description) ? (
+          <ul>
+            {props.description.map((list, id) => (
+              <li className="" key={id}>
+                {list}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="collapse_size_colorDescription">{props.description}</p>
+        ))}
     </div>
-  ));
+  );
 }
 
 export default Dropdown;

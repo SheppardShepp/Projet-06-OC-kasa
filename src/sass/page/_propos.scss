@@ -1,55 +1,43 @@
-.collapse {
+// ------------- Corps de page A Propos ------------
+
+.corpPropos{    
     @include flex;
     @include flexColonne;
-    margin-bottom: 50px;
-    width: 100%;
+    margin: 0 5% 0 5%;
+    width: 90%;
+    max-width: 1440px;
 
-    &_size {
-        width: 90%;
-        background-color: $colorFondTexte;
-        margin: 15px 0 15px 0;
-        border-radius: 5px;
-
-        &_colorTitle {
-            @include flex;
-            @include flexBetween;
-            background-color: $colorTheme;
-            @include texteWhite;
-            padding: 10px 20px 10px 20px;
-            font-size: 24px;
-            border-radius: 5px;
-
-
-            p {
-                margin: 0px;
-            }
-
-            @media (max-width: 650px) {
-                font-size: 14px;
-            }
+    // ------------- le responsive de la banniere ------------
+    
+    .banniere {
+        @media (max-width: 650px) {
+            height: 223px;
         }
 
-        &_colorDescription {
-            @include texteColorTheme;
-            font-size: 24px;
-            font-weight: 400;
-            padding: 15px 10px 10px 10px;
-            margin: 0;
+        // ------------- le fond gris ------------
 
+        &_black {            
             @media (max-width: 650px) {
-                font-size: 12px;
+                height: 223px;
             }
+        }
+        
+        // ------------- l'image de fond ------------
+
+        &_img {
+            @media (max-width: 650px) {
+                height: 223px;
+            }      
+        }
+
+        .imgPropos {            
+            @media (max-width: 650px) {
+                background-size: 120%;
+                background-position: 100% 60%;
+            }
+            @media (max-width: 370px) {
+                background-size: cover;
+            } 
         }
     }
 }
-
-// .arrowCollapse.true {
-//     justify-content: end;
-//   }
-//   .arrowCollapse.true > img {
-//     transform: rotate(-180deg);
-//     transition: all 0.6s ease;
-//   }
-//   .arrowCollapse.false > img {
-//     transition: all 0.6s ease;
-//   }
