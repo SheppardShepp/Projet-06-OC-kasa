@@ -15,7 +15,7 @@ function Banner(props) {
     //affichage de la banniere sur la page à propos
   } else if (props.origin === "about") {
     return (
-      <section className="banniere sizeBanner">
+      <section className="banniere">
         <div className="banniere_black"></div>
         <div className="banniere_img imgPropos"></div>
       </section>

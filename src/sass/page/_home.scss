@@ -4,6 +4,12 @@
     @include flexColonne;
     margin: 0 5% 0 5%;
     max-width: 1440px;
+    @media (max-width: 650px) {
+        margin: 0;
+
+        //
+        width: 100%;
+    }
 
     //-------- section des card logement ----------
     .card {

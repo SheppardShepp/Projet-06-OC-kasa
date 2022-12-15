@@ -4,6 +4,7 @@ import { useParams, Navigate } from "react-router-dom";
 //importation de mes composants
 import Carousel from "../components/Carousel";
 import Tag from "../components/Tag";
+import Rating from "../components/Rating";
 import Dropdown from "../components/Dropdown";
 
 // importation des informations
@@ -20,24 +21,29 @@ function Logement() {
           <section className="carousel">
             <Carousel pictures={detailLogement.pictures} />
           </section>
-
-          <section className="corpLogement_title" /* detail */>
-            <div className="" /*  */>
+          <section className="corpLogement_bloc">
+            <div className="corpLogement_bloc_title">
               <h1>{detailLogement.title}</h1>
               <h2>{detailLogement.location}</h2>
-              <div>
-                <Tag />
+              <div className="sizeBlocTag">
+                <Tag tags={detailLogement.tags} />
               </div>
             </div>
-            <div className="" /* note et createur*/>
-              <div>
+            <div className="corpLogement_bloc_autor">
+              <div className="corpLogement_bloc_autor_identity">
                 <p>{detailLogement.host.name}</p>
-                <img src={detailLogement.host.picture} alt="icone éditeur" />
+                <img
+                  src={detailLogement.host.picture}
+                  className="hostPicture"
+                  alt="icone éditeur"
+                />
               </div>
-              <div>note{/* rating */}</div>
+              <div className="corpLogement_bloc_autor_starRating">
+                <Rating rating={detailLogement.rating} />
+              </div>
             </div>
           </section>
-          <div className="" /* espace dropdown */>
+          <section className="corpLogement_detail">
             <Dropdown
               title="Description"
               description={detailLogement.description}
@@ -46,7 +52,7 @@ function Logement() {
               title="Équipement"
               description={detailLogement.equipments}
             />
-          </div>
+          </section>
         </section>
       ) : (
         <Navigate replace to="/404" />

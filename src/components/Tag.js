@@ -1,10 +1,14 @@
 import React from "react";
 
-function Tag() {
+function Tag(props) {
   return (
-    <div>
-      <h3>bonjour je suis le tag</h3>
-    </div>
+    <>
+      {props.tags.map((tag, id) => (
+        <div className="designTag" key={id}>
+          <p>{tag}</p>
+        </div>
+      ))}
+    </>
   );
 }
 

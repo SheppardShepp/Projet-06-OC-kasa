@@ -1,0 +1,19 @@
+.designTag{
+    @include flex;
+    @include flexCenter;
+    background-color: $colorTheme;
+    min-width: 180px;
+    border-radius: 25px;
+    margin:  5px 10px 5px 0;
+    @media (max-width: 650px) {
+        min-width: 80px;
+    }
+    p{
+        @include texteWhite;
+        margin: 5px;        
+        @media (max-width: 650px) {
+            font-size: 10px;
+        }
+    }
+    
+}

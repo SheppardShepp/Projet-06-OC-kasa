@@ -3,7 +3,9 @@
 .card_caroussel {
     @include cardItem;
     @include cardResponsive;
+    position: relative;
     margin: 50px;
+
 
     //---------- image d'une card ------------
 

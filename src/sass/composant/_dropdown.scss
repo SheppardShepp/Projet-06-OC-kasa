@@ -8,10 +8,9 @@
 
     // ------------- div d'un collapse ------------
 
-    &_size {
-        width: 90%;
-        background-color: $colorFondTexte;
-        margin: 15px 0 15px 0;
+    &_style {
+        // width: 90%;        
+        // margin: 15px 0 15px 0;
         border-radius: 5px;
 
         // ------------- gestion du collapse et l'animation ------------
@@ -22,7 +21,7 @@
             @include texteWhite;
             background-color: $colorTheme;
             padding: 10px 20px 10px 20px;
-            font-size: 24px;
+            font-size: 20px;
             border-radius: 5px;
             cursor: pointer;
             @media (max-width: 650px) {
@@ -48,10 +47,28 @@
 
         &_colorDescription {
             @include texteColorTheme;
-            font-size: 24px;
+            font-size: 20px;
+            min-height: 90px;
             font-weight: 400;
             padding: 15px 10px 10px 10px;
-            margin: 0;
+            margin: 0;            
+            background-color: $colorFondTexte;
+
+            @media (max-width: 650px) {
+                font-size: 12px;
+            }
+        }
+
+        &_colorList{            
+            @include texteColorTheme;
+            list-style-type: none;
+            font-size: 20px;
+            min-height: 90px;
+            font-weight: 400;
+            padding: 15px 10px 10px 10px;
+            margin: 0;            
+            background-color: $colorFondTexte;
+
             @media (max-width: 650px) {
                 font-size: 12px;
             }

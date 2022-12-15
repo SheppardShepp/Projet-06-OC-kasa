@@ -6,6 +6,10 @@
     margin: 0 5% 0 5%;
     width: 90%;
     max-width: 1440px;
+    @media (max-width: 650px) {
+        margin: 0;
+        width: 100%;
+    }
 
     // ------------- le responsive de la banniere ------------
     
@@ -40,4 +44,10 @@
             } 
         }
     }
+    
+    .sizeAPropos{
+        width: 90%;        
+        margin: 15px 0 15px 0;
+    }
+    
 }
