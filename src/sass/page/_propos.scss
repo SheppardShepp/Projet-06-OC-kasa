@@ -3,9 +3,10 @@
 .corpPropos{    
     @include flex;
     @include flexColonne;
+    align-items: center;
     margin: 0 5% 0 5%;
     width: 90%;
-    max-width: 1440px;
+    max-width: 1240px;
     @media (max-width: 650px) {
         margin: 0;
         width: 100%;

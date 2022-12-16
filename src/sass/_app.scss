@@ -11,4 +11,5 @@ main {
     margin-bottom: 409px;
     @include flex;
     @include flexColonne;
+    align-items: center;
 }

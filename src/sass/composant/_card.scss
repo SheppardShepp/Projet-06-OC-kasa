@@ -4,35 +4,35 @@
     @include cardItem;
     @include cardResponsive;
     position: relative;
-    margin: 50px;
+    margin: 35px;
 
 
     //---------- image d'une card ------------
 
     &_img {
-        position: absolute;
         @include cardItem;
         @include cardResponsive;
+        position: absolute;
         object-fit: cover;
     }
 
     //---------- dégradé de l'image ------------
 
     &_color {
-        position: absolute;
         @include cardItem;
         @include cardResponsive;
+        position: absolute;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
     }
 
     //---------- superposition du texte ------------
 
     &_text {
-        position: absolute;
         @include flex;
+        @include flexColonne;
         @include cardItem;
         @include cardResponsive;
-        flex-direction: column;
+        position: absolute;
         justify-content: flex-end;
         font-size: 18px;
         margin: 0;
@@ -46,6 +46,6 @@
 
     //---------- fond apr défaut en cas d'erreur d'importation de l'image --------------
     .cardError {
-        background: #FF6060;
+        background: $colorTheme;
     }
 }

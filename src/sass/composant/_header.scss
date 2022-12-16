@@ -3,16 +3,20 @@
 header {
     @include flex;
     @include flexBetween;
+    align-items: center;
     margin: 5% 5% 0 5%;
     width: 90%;
-    min-width: 335px;
-    max-width: 1440px;
+    max-width: 1240px;
+    @media (max-width: 350px) {
+        flex-wrap: wrap;
+        @include flexCenter;
+    }
 
     // ------------- logo kasa ------------
 
     .imgHeader {
         @media (max-width: 650px) {
-            width: 100px;
+            width: 130px;
         }
     }
 
@@ -21,10 +25,11 @@ header {
     nav {
         @include flex;
         @include flexBetween;
+        align-items: center;
         width: 310px;
-
         @media (max-width: 650px) {
-            width: 150px;
+            width: 180px;
+            margin-top: 20px;
         }
 
         // ------------- les lien de navigation ------------
@@ -36,14 +41,15 @@ header {
             width: 110px;
             text-align: right;
             text-decoration: none;
-
             &:hover {
                 text-decoration-line: underline;
             }
-
             @media (max-width: 650px) {
                 font-size: 12px;
                 text-transform: uppercase;
+            }
+            @media (max-width: 350px) {
+                text-align: center;
             }
         }
     }

@@ -3,6 +3,7 @@
 .collapse {
     @include flex;
     @include flexColonne;
+    align-items: center;
     margin-bottom: 50px;
     width: 100%;
 
@@ -19,6 +20,7 @@
             @include flex;
             @include flexBetween;
             @include texteWhite;
+            align-items: center;
             background-color: $colorTheme;
             padding: 10px 20px 10px 20px;
             font-size: 20px;
@@ -43,35 +45,16 @@
             }
         }
 
-        // ------------- texte du collapse ------------
+        // ------------- texte des collapse ------------
 
         &_colorDescription {
-            @include texteColorTheme;
-            font-size: 20px;
-            min-height: 90px;
-            font-weight: 400;
-            padding: 15px 10px 10px 10px;
-            margin: 0;            
-            background-color: $colorFondTexte;
-
-            @media (max-width: 650px) {
-                font-size: 12px;
-            }
+            @include dropdownStyle;
         }
 
-        &_colorList{            
-            @include texteColorTheme;
-            list-style-type: none;
-            font-size: 20px;
-            min-height: 90px;
-            font-weight: 400;
-            padding: 15px 10px 10px 10px;
-            margin: 0;            
-            background-color: $colorFondTexte;
-
-            @media (max-width: 650px) {
-                font-size: 12px;
-            }
+        &_colorList{
+            @include dropdownStyle;
+            list-style-type: none;            
+            
         }
     }
 }

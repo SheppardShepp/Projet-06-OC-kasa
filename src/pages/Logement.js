@@ -38,7 +38,7 @@ function Logement() {
                   alt="icone éditeur"
                 />
               </div>
-              <div className="corpLogement_bloc_autor_starRating">
+              <div className="bloc_starRating">
                 <Rating rating={detailLogement.rating} />
               </div>
             </div>

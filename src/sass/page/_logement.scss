@@ -1,8 +1,10 @@
 .corpLogement{
     @include flex;
     @include flexColonne;
-    margin: 2% 5% 0 5%;
-    width: 100%;
+    align-items: center;
+    margin: 30px 0 0 0;
+    width: 90%;
+    max-width: 1240px;
     @media (max-width: 650px) {
         width: 90%;
     }
@@ -10,8 +12,8 @@
     &_bloc{
         @include flex;
         @include flexBetween;
-        width: 90%;
-        max-width: 1440px;
+        align-items: center;
+        width: 100%;
         margin-top: 30px;
         
         @media (max-width: 650px) {
@@ -43,21 +45,13 @@
                     font-size: 14px;
                 }
             }
-            .sizeBlocTag{
-                @include flex;
-                flex-wrap: wrap;
-                margin: 20px 0 5px 0;                
-                @media (max-width: 650px) {
-                    flex-wrap: nowrap;
-                }
-
-            }
         }
 
         &_autor{
             @include flex;
             @include flexColonne;
             @include flexBetween;
+            align-items: center;
             width: 200px;
             min-height: 170px;
             @media (max-width: 650px) {
@@ -88,29 +82,13 @@
                     }
                 }
             }
-            
-            &_starRating{
-                @include flex;
-                @include flexAround;
-                width: 100%;
-                margin: 20px 0 20px 0;
-                @media (max-width: 650px) {
-                    justify-content: start;
-                    .sizeStar {
-                        width: 20px;
-                        margin: 2px
-                    }
-                    
-                }
-            }
         }
     }
 
     &_detail{
         @include flex;
-        justify-content: space-between;
-        width: 90%;
-        max-width: 1440px;
+        @include flexBetween;
+        width: 100%;
         @media (max-width: 650px) {
             @include flexColonne;
             width: 100%;

@@ -4,6 +4,8 @@
     @include flex;
     @include flexColonne;
     @include flexEvenly;
+    align-items: center;
+    width: 90%;
     @media (max-width: 650px) {
         height: 500px;
         justify-content: center;

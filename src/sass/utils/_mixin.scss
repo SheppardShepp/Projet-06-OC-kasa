@@ -10,22 +10,18 @@
 }
 
 @mixin flexColonne {
-    align-items: center;
     flex-direction: column;
 }
 
 @mixin flexBetween {
-    align-items: center;
     justify-content: space-between;
 }
 
 @mixin flexAround {
-    align-items: center;
     justify-content: space-around;
 }
 
 @mixin flexEvenly {
-    align-items: center;
     justify-content: space-evenly;
 }
 
@@ -38,7 +34,6 @@
 
 @mixin banniereRexponsive {
     @media (max-width: 650px) {
-        min-width: 248px;
         border-radius: 10px;
         height: 110px;
         font-size: 18px;
@@ -54,11 +49,8 @@
 
 @mixin cardResponsive {
     @media (max-width: 650px) {
-        // width: 300px;
         height: 255px;
         margin: 10px 0 10px 0;
-
-        //
         width: 100%;
     }
 }
@@ -75,4 +67,19 @@
     color: $colorTheme;
     font-family: $texte;
     font-weight: 500;
+}
+
+//-------- les dropdown -----------
+
+@mixin dropdownStyle{
+    @include texteColorTheme;
+    font-size: 20px;
+    min-height: 90px;
+    font-weight: 400;
+    padding: 15px 10px 10px 10px;
+    margin: 0;            
+    background-color: $colorFondTexte;
+    @media (max-width: 650px) {
+        font-size: 12px;
+    }
 }
