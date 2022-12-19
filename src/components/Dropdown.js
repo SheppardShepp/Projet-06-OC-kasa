@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-// gestion des collapse et leur déroulé
+// gestion des collapses, leur déroulé, et la rotation du chevron
 function Dropdown(props) {
   // par défault les collapses sont fermé
   const [open, setOpen] = useState(false);

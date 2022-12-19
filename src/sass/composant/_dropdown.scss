@@ -1,5 +1,4 @@
 // ------------- la section Dropdown ------------
-
 .collapse {
     @include flex;
     @include flexColonne;
@@ -8,14 +7,10 @@
     width: 100%;
 
     // ------------- div d'un collapse ------------
-
     &_style {
-        // width: 90%;        
-        // margin: 15px 0 15px 0;
         border-radius: 5px;
 
         // ------------- gestion du collapse et l'animation ------------
-
         &_colorTitle {
             @include flex;
             @include flexBetween;
@@ -34,8 +29,7 @@
                 margin: 0px;
             }            
             
-            // ------------- animation du chevron ------------
-            
+            // ------------- animation du chevron ------------            
             .dropdown {
                 transition: 250ms;
             }
@@ -46,7 +40,6 @@
         }
 
         // ------------- texte des collapse ------------
-
         &_colorDescription {
             @include dropdownStyle;
         }
@@ -54,7 +47,6 @@
         &_colorList{
             @include dropdownStyle;
             list-style-type: none;            
-            
         }
     }
 }

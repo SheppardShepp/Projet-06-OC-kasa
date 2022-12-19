@@ -1,5 +1,4 @@
 // ------------- section footer ------------
-
 footer {
     position: absolute;
     bottom: 0;
@@ -14,13 +13,11 @@ footer {
     }
 
     // ------------- logo kasa ------------
-
     img {
         padding-top: 50px;
     }
 
     // ------------- texte bas de page ------------
-
     p {
         @include texteWhite;
         font-size: 24px;

@@ -1,10 +1,11 @@
-
+// ------------- taille de la div des tags ------------
 .sizeBlocTag{
     @include flex;
     flex-wrap: wrap;
     margin: 20px 0 5px
 }
 
+// ------------- style d'un tag ------------
 .designTag{
     @include flex;
     @include flexCenter;
@@ -15,12 +16,12 @@
     @media (max-width: 650px) {
         min-width: 80px;
     }
+
     p{
         @include texteWhite;
         margin: 5px;        
         @media (max-width: 650px) {
             font-size: 10px;
         }
-    }
-    
+    }    
 }

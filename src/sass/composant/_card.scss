@@ -1,14 +1,11 @@
 // ------------- section carrousel ------------
-
 .card_caroussel {
     @include cardItem;
     @include cardResponsive;
     position: relative;
     margin: 35px;
 
-
     //---------- image d'une card ------------
-
     &_img {
         @include cardItem;
         @include cardResponsive;
@@ -17,7 +14,6 @@
     }
 
     //---------- dégradé de l'image ------------
-
     &_color {
         @include cardItem;
         @include cardResponsive;
@@ -26,7 +22,6 @@
     }
 
     //---------- superposition du texte ------------
-
     &_text {
         @include flex;
         @include flexColonne;
@@ -44,7 +39,7 @@
         }
     }
 
-    //---------- fond apr défaut en cas d'erreur d'importation de l'image --------------
+    //---------- fond par défaut en cas d'erreur d'importation de l'image --------------
     .cardError {
         background: $colorTheme;
     }

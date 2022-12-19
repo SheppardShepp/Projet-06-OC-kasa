@@ -1,3 +1,4 @@
+// ------------- div de notation ------------
 .bloc_starRating{
     @include flex;
     @include flexAround;
@@ -8,6 +9,7 @@
         justify-content: start;
         flex-wrap: wrap;
         
+        // ------------- taille des star avec le responsive ------------
         .sizeStar {
             width: 20px;
             margin: 2px

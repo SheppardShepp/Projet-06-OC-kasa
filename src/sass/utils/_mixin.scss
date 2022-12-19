@@ -1,5 +1,4 @@
 //---------- flexbox --------
-
 @mixin flex {
     display: flex;
 }
@@ -26,15 +25,13 @@
 }
 
 //--------- La banniere -----------
-
 @mixin banniere {
-    border-radius: 25px;
+    border-radius: 20px;
     height: 223px;
 }
 
 @mixin banniereRexponsive {
     @media (max-width: 650px) {
-        border-radius: 10px;
         height: 110px;
         font-size: 18px;
     }
@@ -56,7 +53,6 @@
 }
 
 //-------- les textes -----------
-
 @mixin texteWhite {
     color: $colorsTexte;
     font-family: $texte;
@@ -70,7 +66,6 @@
 }
 
 //-------- les dropdown -----------
-
 @mixin dropdownStyle{
     @include texteColorTheme;
     font-size: 20px;

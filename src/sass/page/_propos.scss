@@ -1,5 +1,4 @@
 // ------------- Corps de page A Propos ------------
-
 .corpPropos{    
     @include flex;
     @include flexColonne;
@@ -12,15 +11,13 @@
         width: 100%;
     }
 
-    // ------------- le responsive de la banniere ------------
-    
+    // ------------- le responsive de la banniere ------------    
     .banniere {
         @media (max-width: 650px) {
             height: 223px;
         }
 
         // ------------- le fond gris ------------
-
         &_black {            
             @media (max-width: 650px) {
                 height: 223px;
@@ -28,7 +25,6 @@
         }
         
         // ------------- l'image de fond ------------
-
         &_img {
             @media (max-width: 650px) {
                 height: 223px;
@@ -46,6 +42,7 @@
         }
     }
     
+    // ------------- taille collapse sur la page ------------
     .sizeAPropos{
         width: 90%;        
         margin: 15px 0 15px 0;

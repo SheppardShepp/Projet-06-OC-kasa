@@ -1,8 +1,10 @@
 import React from "react";
+
+//importation de mes composants
 import Banner from "../components/Banner";
 import Cards from "../components/Card";
 
-// ---------- page d'accueil --------------
+//fonction qui retourne la page d'accueil
 function Home() {
   return (
     <section className="corpHome">

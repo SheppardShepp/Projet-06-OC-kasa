@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+![Banniere de présentation](https://github.com/SheppardShepp/p7-kasa-oc/blob/master/src/assets/gitImg/imgReadme.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Projet 7 KASA
 
-## Available Scripts
+## Contexte du projet
 
-In the project directory, you can run:
+Le site de Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec un code legacy important.
+Laura, la CTO, a donc lancé une refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté back-end, et React côté front-end.
+Kasa en a également profité pour commander de nouvelles maquettes auprès de son designer habituel, qui est en freelance.
+Un gros chantier pour cette année !
 
-### `npm start`
+## Le projet et son fonctionnement
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Les technologies utilisées:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- pour le front: javascript utilisant React.
 
-### `npm test`
+Rendez-vous dans les fichiers "package.json" pour prendre connaissance des outils utilisés.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+La maquette du site ce trouve en ligne sur le site de Figma a l'adresse suivante: https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=3%3A0&t=VRf5JepEixHtFGuy-0
 
-### `npm run build`
+## La partie FRONTEND
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Pour faire fonctionner la partie front, il faut installer le package npm
+Pour cela ouvrer le terminal et entrer les commandes suivantes:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- "npm install"
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+puis:
 
-### `npm run eject`
+- "npm start"
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+une page internet s'ouvrira sur le navigateur par defaut avec le site a l'adresse: http://localhost:3000/
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## La partie BACKEND
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+La partie Back-end n'étant pas disponible, c'est des fichiers JSON qui le simule pour la récupération des données.
+Vous les trouverais dans la dossier "data"

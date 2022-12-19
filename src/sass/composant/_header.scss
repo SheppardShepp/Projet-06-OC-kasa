@@ -1,5 +1,4 @@
 // ------------- section header ------------
-
 header {
     @include flex;
     @include flexBetween;
@@ -13,7 +12,6 @@ header {
     }
 
     // ------------- logo kasa ------------
-
     .imgHeader {
         @media (max-width: 650px) {
             width: 130px;
@@ -21,7 +19,6 @@ header {
     }
 
     // ------------- le menu de navigation ------------
-
     nav {
         @include flex;
         @include flexBetween;
@@ -33,10 +30,8 @@ header {
         }
 
         // ------------- les lien de navigation ------------
-
         a {
             @include texteColorTheme;
-            text-align: center;
             font-size: 24px;
             width: 110px;
             text-align: right;
@@ -53,5 +48,4 @@ header {
             }
         }
     }
-
 }

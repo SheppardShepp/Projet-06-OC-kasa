@@ -1,5 +1,4 @@
 // ------------- la section banniere ------------
-
 .banniere {
     position: relative;
     width: 100%;
@@ -11,7 +10,6 @@
     }
 
     // ------------- le fond gris ------------
-
     &_black {
         position: absolute;
         @include banniere;
@@ -23,7 +21,6 @@
     }
 
     // ------------- le texte ------------
-
     &_text {
         position: absolute;
         @include flex;
@@ -31,16 +28,14 @@
         @include texteWhite;
         @include banniere;
         @include banniereRexponsive;
-        width: 90%;
-        text-align: center;
+        width: 95%;
         font-size: 48px;
         letter-spacing: 5px;
         word-spacing: 4px;
-        margin: 0 20px;
+        margin: 0 2.5%;
     }
 
     // ------------- l'image de fond ------------
-
     &_img {
         @include banniere;
         @include banniereRexponsive;
@@ -50,17 +45,14 @@
     }
 
     // ------------- l'image de la page d'accueil ------------
-
     .imgHome {
         background-image: url(../../assets/imgBanniere.svg);        
         background-position: center;
     }
 
     // ------------- l'image de la page A Propos ------------
-
     .imgPropos {
         background-image: url(../../assets/kalen1440.webp);
         background-position: 20% 40%;
     }
-
 }

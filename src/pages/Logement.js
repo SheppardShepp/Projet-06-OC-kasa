@@ -7,10 +7,12 @@ import Tag from "../components/Tag";
 import Rating from "../components/Rating";
 import Dropdown from "../components/Dropdown";
 
-// importation des informations
+// importation des données
 import products from "../data/product.json";
 
+//fonction qui retourne ma page logement
 function Logement() {
+  //je recupere d'id dans l'url  pour obtenir le 1er objet correspondant dans le fichier json
   const id = useParams();
   const detailLogement = products.find((logement) => logement.id === id.id);
 
