@@ -9,28 +9,37 @@ Laura, la CTO, a donc lancé une refonte totale pour passer à une stack complè
 Kasa en a également profité pour commander de nouvelles maquettes auprès de son designer habituel, qui est en freelance.
 Un gros chantier pour cette année !
 
-## Le projet et son fonctionnement
+## Son architecture
 
 Les technologies utilisées:
 
-- pour le front: javascript utilisant React.
+- pour le front: Javascript utilisant React.
+  https://fr.reactjs.org/docs/getting-started.html#try-react
+- pour le rendu CSS: le prépocesseur Sass
+  https://sass-lang.com/
 
-Rendez-vous dans les fichiers "package.json" pour prendre connaissance des outils utilisés.
+les dépendances utilisé sont:
+"react"
+"react-dom"
+"react-router-dom"
+"react-scripts"
 
 La maquette du site ce trouve en ligne sur le site de Figma a l'adresse suivante: https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=3%3A0&t=VRf5JepEixHtFGuy-0
 
 ## La partie FRONTEND
 
-Pour faire fonctionner la partie front, il faut installer le package npm
-Pour cela ouvrer le terminal et entrer les commandes suivantes:
+### Pré-requis
 
-- "npm install"
+- Avoir installé Node.js sur sa machine
+- Installer les dependances
+  exemple avec "npm install"
 
-puis:
+### Developement en local
 
-- "npm start"
+Dans le terminal, saisir:
+"npm start"
 
-une page internet s'ouvrira sur le navigateur par defaut avec le site a l'adresse: http://localhost:3000/
+une page internet s'ouvrira sur le navigateur par defaut avec le site à l'adresse: http://localhost:3000/
 
 ## La partie BACKEND
 
