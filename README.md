@@ -19,10 +19,11 @@ Les technologies utilisées:
   https://sass-lang.com/
 
 les dépendances utilisé sont:
-"react"
-"react-dom"
-"react-router-dom"
-"react-scripts"
+
+- "react"
+- "react-dom"
+- "react-router-dom"
+- "react-scripts"
 
 La maquette du site ce trouve en ligne sur le site de Figma a l'adresse suivante: https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=3%3A0&t=VRf5JepEixHtFGuy-0
 
@@ -32,12 +33,13 @@ La maquette du site ce trouve en ligne sur le site de Figma a l'adresse suivante
 
 - Avoir installé Node.js sur sa machine
 - Installer les dependances
-  exemple avec "npm install"
+  - exemple avec "npm install"
 
-### Developement en local
+### Dévelopement en local
 
-Dans le terminal, saisir:
-"npm start"
+Dans le terminal, saisir par exemple:
+
+- "npm start"
 
 une page internet s'ouvrira sur le navigateur par defaut avec le site à l'adresse: http://localhost:3000/
 
