@@ -21,13 +21,17 @@ function Carousel(props) {
         alt="Aperçue Logement"
       />
       <div className="carousel_backBlack"></div>
-      <div className="carousel_chevron">
-        <i onClick={previousSlide} className="fa-solid fa-chevron-left"></i>
-        <i onClick={nextSlide} className="fa-solid fa-chevron-right"></i>
-      </div>
-      <div className="carousel_compteur">
-        {slid + 1}/{props.pictures.length}
-      </div>
+      {props.pictures.length !== 1 && (
+        <>
+          <div className="carousel_chevron">
+            <i onClick={previousSlide} className="fa-solid fa-chevron-left"></i>
+            <i onClick={nextSlide} className="fa-solid fa-chevron-right"></i>
+          </div>
+          <div className="carousel_compteur">
+            {slid + 1}/{props.pictures.length}
+          </div>
+        </>
+      )}
     </>
   );
 }
