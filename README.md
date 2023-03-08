@@ -7,9 +7,8 @@
 - [Présentation du projet](#présentation)
 - [Aperçu du projet](#projet)
 - [Spécification du projet](#specification)
-- [Utilisation de la parti Front](#utilisation)
-- [Installation de l'API](#api)
-- [Création d'un compte utilisateur](#utilisateur)
+- [Pour un travail en local](#utilisation)
+- [La partie back](#api)
 
 ## 💭 Petit mot de présentation <a name = "présentation"></a>
 
@@ -69,7 +68,7 @@ Aperçu :
 
 ---
 
-## :gear: Utilisation de la partie Front <a name = "utilisation"></a>
+## :gear: Pour un travail en local <a name = "utilisation"></a>
 
 Cloner le dépôt git du projet via un éditeur de code ou le télécharger puis le décompresser sur votre machine. Une fois le dossier ouvert avec un éditeur de code (comme VSCode), ouvrir et saisir dans le terminal les commandes suivante :
 
@@ -81,7 +80,7 @@ puis pour le lancer au local saisir :
 
 une page internet s'ouvrira sur le navigateur par defaut avec le site à l'adresse: http://localhost:3000/
 
-## :gear: La partie BACKEND <a name = "api"></a>
+## :gear: La partie back <a name = "api"></a>
 
 La parti Back-end n'éxistant pas, elle est simuler par des fichiers ".json".
 Ceux-ci ce trouve dans les dossiers "src" puis "data".
