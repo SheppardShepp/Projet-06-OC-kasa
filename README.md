@@ -1,6 +1,6 @@
 <h1 align="center">Projet 7 KASA</h1>
 
-<div align="center"><img height="200" src="https://i31.servimg.com/u/f31/13/52/99/79/imgrea11.png"></div>
+<div align="center"><img height="250" src="https://i31.servimg.com/u/f31/13/52/99/79/imgrea11.png"></div>
 
 ## 📝 Sommaires
 
